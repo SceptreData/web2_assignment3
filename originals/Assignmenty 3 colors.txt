@@ -1,0 +1,21 @@
+Hella black
+#333333
+
+Light Black
+#222222
+
+
+
+Dark Grey
+#575153
+
+Light Grey
+#a6a6a6
+
+Footer Grey
+f8f8f8
+
+
+Teal
+#00c8c8
+

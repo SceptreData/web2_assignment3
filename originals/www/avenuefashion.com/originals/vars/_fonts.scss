@@ -1,0 +1,16 @@
+@import '../../fonts/index';
+
+$body-font: 'Roboto';
+$title-font: 'Montserrat Regular';
+$title-light-font: 'Montserrat Light';
+$title-bold-font: 'Montserrat Bold';
+
+
+/*  BASE 16 ... BODY SCALE 93.75%
+    Scale (px): 31.1 / 25.92 / 21.6 / 18 -- 15 -- 12.5 / 10.42 
+*/
+$h1: 1.9438rem;     /* 31.1px */
+$h2: 1.35rem;       /* 21.6px */
+$h3: 1.125rem;      /* 18px */
+$note-size: 0.7813rem;  /* 12.5px */
+$small: 0.6513rem;      /* 10.42px */

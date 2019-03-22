@@ -1,0 +1,13 @@
+
+style.scss main style sheet imports all required css files from
+
+Project Folder Utalize Partials _
+partial isn't compiled -------doesn't make a css files
+_nav.scss    no nav.css compiled   
+
+----> @import 'nav'
+-init (reboot and reset)
+-typography (typs stuff....)
+-build ( page build styles)
+
+
