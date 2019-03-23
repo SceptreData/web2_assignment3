@@ -1,0 +1,23 @@
+.client-sign-up{
+  padding: 1rem;
+  min-width: 960px;
+  margin: 0 auto;
+
+  div {
+    border: 1px solid grey;
+    background: #fff;
+    padding: 1rem 0;
+  }
+}
+
+@media(min-width: 800px){
+  .client-sign-up{
+    background: blue;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    div {
+      width: 45%;
+    }
+  }
+}

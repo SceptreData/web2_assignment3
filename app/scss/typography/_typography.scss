@@ -1,36 +1,101 @@
-body {
-    font-family: 'Nunito', sans-serif;
+ /* montserrat-300 - latin */
+ @font-face {
+    font-family: 'Montserrat';
+    display: block;
+    font-style: normal;
+    font-weight: 300;
+    src: local('Montserrat Light'), local('Montserrat-Light'),
+        url('../fonts/montserrat/montserrat-v12-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/montserrat/montserrat-v12-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-p {
-    margin-bottom: 1.25em;
-    line-height: 1.4;
-}
-
-h1, h2, h3, h4, h5 {
-    margin: 2.75rem 0 1rem;
-    font-family: 'Nunito', sans-serif;
+/* montserrat-regular - latin */
+@font-face {
+    font-family: 'Montserrat';
+    display: block;
+    font-style: normal;
     font-weight: 400;
-    line-height: 1.15;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+        url('../fonts/montserrat/montserrat-v12-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/montserrat/montserrat-v12-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-h1 {
-    margin-top: 0;
-    font-size: 4.209em;
-    font-weight: 300;
+/* montserrat-700 - latin */
+@font-face {
+    font-family: 'Montserrat';
+    display: block;
+    font-style: normal;
+    font-weight: 700;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+        url('../fonts/montserrat/montserrat-v12-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/montserrat/montserrat-v12-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-  
-h2 {
-    font-size: 3.157em;
-    font-weight: 300;
-    margin: 0;
+
+/* roboto-regular - latin */
+@font-face {
+    font-family: 'Roboto';
+    display: block;
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'),
+        url('../fonts/roboto/roboto-v18-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/roboto/roboto-v18-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-h3 {font-size: 2.369em;}
+body{
+    font-family:"Montserrat";
+    font-weight: 400;
+    line-height:1.5;
+}
 
-h4 {font-size: 1.777em;}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight:700;
+}
 
-h5 {font-size: 1.333em;
-    margin: 0;}
+.h1,
+.h2 {
+    line-height: 1.1;
+}
 
-small, .text_small {font-size: 0.75em;}
+.h3,
+.h4 {
+    line-height: 1.3;
+}
+
+.h1 {
+    font-size: 400%;
+    letter-spacing: -2px;
+}
+
+.h2 {
+    font-size: 250%;
+    letter-spacing: -1px;
+}
+
+.h3 {
+    font-size: 200%;
+}
+
+.h4 {
+    font-size: 180%;
+}
+
+.h5 {
+    font-size: 130%;
+}
+ 
+.small-1{
+    font-size: calc(14px / 1rem)
+}
+
+.small-2{
+    font-size: calc(12px / 1rem)
+}
+.small-3{
+    font-size: calc(10px / 1rem)
+}
