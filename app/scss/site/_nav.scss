@@ -12,5 +12,29 @@
 }
 
 .list-view{
-    // display: none;
+    display: none;
+}
+
+.avenue-fashion {
+    font-size: 1.25rem;
+    font-weight: bolder;
+    color: #333;
+
+    span {
+        font-weight: 700;
+        color: #777;
+    }
+}
+
+@media (min-width: 720px){
+    .menu-icon{
+        display: none;
+    }
+
+    .list-view {
+        display: flex;
+        li {
+            margin: 0 1rem;
+        }
+    }
 }
