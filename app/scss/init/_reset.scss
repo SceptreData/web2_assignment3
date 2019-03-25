@@ -1,4 +1,10 @@
 /*! minireset.css v0.0.4 | MIT License | github.com/jgthms/minireset.css */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 // Blocks
 html,
 body,
@@ -50,20 +56,6 @@ select,
 textarea {
     margin: 0
 }
-
-// Box sizing
-html {
-
-    box-sizing: border-box;
-
-    * &,
-    &:before,
-    &:after {
-        box-sizing: inherit
-    }
-}
-
-
 
 
 // Media

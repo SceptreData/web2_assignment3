@@ -27,7 +27,7 @@
           <li>men</li>
           <li>womens</li>
           <li>the brand</li>
-          <li>local storesj</li>
+          <li>local stores</li>
           <li>look book</li>
         </ul>
       </li>
@@ -41,19 +41,63 @@
 
   <main>
     <aside>
+      <h3>register</h3>
       <form id="client-sign-up" class="client-sign-up">
-        <h3>register</h3>
-        <div class="first-name"></div>
-        <div class="last-name"></div>
-        <div class="email"></div>
-        <div class="password"></div>
-        <div class="password-confirm"></div>
-        <div class="email-frequency"></div>
-        <div class="phone-number"></div>
-        <div class="fine-print"></div>
-        <div class="message-box"></div>
-        <div class="sign-up-categories"></div>
-        <div class="prefrences"></div>
+        <div class="first-name">
+          <label for="firstName">First name</label>
+          <input id="firstName" type="text" name="firstName">
+        </div>
+
+        <div class="last-name">
+          <label for="lastName">Last name</label>
+          <input id="lastName" type="text" name="lastName">
+        </div>
+
+        <div class="email">
+          <label for="emailAddress">e-mail address</label>
+          <input id="emailAddress" type="text" name="emailAddress">
+        </div>
+
+        <div class="password">
+          <label for="password">password</label>
+          <input id="password" type="text" name="password">
+        </div>
+
+        <div class="password-confirm">
+          <label for="passwordConfirm">password confirm</label>
+          <input id="passwordConfirm" type="text" name="passwordConfirm">
+        </div>
+
+        <div class="email-frequency">
+          <label for="emailFrequency"></label>
+          <select name="" id="">
+            <option value="no">no</option>
+            <option value="yes">yes</option>
+            <option value="weekly">weekly</option>
+          </select>
+        </div>
+
+        <div class="phone-number">
+          <label for="phoneNumber">Phone Number</label>
+          <input id="phoneNumber" type="text" name="phoneNumber">
+        </div>
+
+        <div class="fine-print">
+          <input type="radio">
+            I agree to the terms and conditions of the website. I may opt out at any time.
+        </div>
+
+        <div class="message-box">
+          <label for="">Send us a message <span>(optional)</span></label>
+          <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        </div>
+
+        <div class="sign-up-categories">
+        </div>
+
+        <div class="preferences">
+        </div>
+
       </form>
       <button type="submit" form="client-sign-up" value="Submit">
         Create Account
@@ -140,7 +184,7 @@
     </div>
   </footer>
  
-<script src="js/main.js"></script>
+<!-- <script src="js/main.js"></script> -->
 </body>
 
 </html>

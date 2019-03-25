@@ -1,4 +1,9 @@
 /*! minireset.css v0.0.4 | MIT License | github.com/jgthms/minireset.css */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
 html,
 body,
 p,
@@ -42,11 +47,6 @@ input,
 select,
 textarea {
   margin: 0; }
-
-html {
-  box-sizing: border-box; }
-  * html, html:before, html:after {
-    box-sizing: inherit; }
 
 img,
 embed,
@@ -243,23 +243,60 @@ h6 {
 .header-tagline {
   font-size: calc(1.2rem + 1vw); }
 
+aside {
+  max-width: 960px;
+  margin: 0 auto; }
+
 .client-sign-up {
   padding: 1rem;
-  min-width: 960px;
-  margin: 0 auto; }
-  .client-sign-up div {
+  margin: 0 auto;
+  display: grid;
+  grid-row-gap: 1.5rem; }
+  .client-sign-up label {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    color: #999;
+    display: block; }
+  .client-sign-up input, .client-sign-up select {
     border: 1px solid grey;
-    background: #fff;
-    padding: 1rem 0; }
+    background-color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    color: #444;
+    width: 100%;
+    padding: .25rem .5rem; }
+  .client-sign-up input[type='radio'] {
+    width: 2rem;
+    background: #fff; }
+  .client-sign-up textarea {
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 185px;
+    min-height: 185px; }
 
-@media (min-width: 800px) {
+@media (min-width: 720px) {
   .client-sign-up {
-    background: blue;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap; }
-    .client-sign-up div {
-      width: 45%; } }
+    grid-column-gap: 1.5rem;
+    grid-template-areas: "first last" "email email" "password confirm-pw" "email-freq phone" "fine-print fine-print" "msg msg"; }
+    .client-sign-up .first-name {
+      grid-area: first; }
+    .client-sign-up .last-name {
+      grid-area: last; }
+    .client-sign-up .email {
+      grid-area: email; }
+    .client-sign-up .password {
+      grid-area: password; }
+    .client-sign-up .password-confirm {
+      grid-area: confirm-pw; }
+    .client-sign-up .email-frequency {
+      grid-area: email-freq; }
+    .client-sign-up .phone-number {
+      grid-area: phone; }
+    .client-sign-up .fine-print {
+      grid-area: fine-print; }
+    .client-sign-up .message-box {
+      grid-area: msg; } }
 
 .award-tile {
   text-transform: uppercase;

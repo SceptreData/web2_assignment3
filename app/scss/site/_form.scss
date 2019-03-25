@@ -1,23 +1,140 @@
+aside {
+  max-width: 960px;
+  margin: 0 auto;
+}
 .client-sign-up{
   padding: 1rem;
-  min-width: 960px;
+  // min-width: 610px;
   margin: 0 auto;
+  display: grid;
+  grid-row-gap: 1.5rem;
 
-  div {
+  label {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    color: #999;
+    display: block;
+  }
+
+  input, select{
     border: 1px solid grey;
+    background-color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    color: #444;
+    width: 100%;
+    padding: .25rem .5rem;
+  }
+
+  input[type='radio']{
+    width: 2rem;
     background: #fff;
-    padding: 1rem 0;
+  }
+
+  textarea {
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 185px;
+    min-height: 185px;
   }
 }
 
-@media(min-width: 800px){
+@media(min-width: 720px){
   .client-sign-up{
-    background: blue;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    div {
-      width: 45%;
+    grid-column-gap: 1.5rem;
+    // grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "first last"
+    "email email"
+    "password confirm-pw"
+    "email-freq phone"
+    "fine-print fine-print"
+    "msg msg";
+    
+   .first-name {
+      grid-area: first;
     }
+
+    .last-name {
+      grid-area: last;
+    }
+
+    .email {
+      grid-area: email;
+    }
+
+    .password {
+      grid-area: password;
+    }
+
+    .password-confirm {
+      grid-area: confirm-pw;
+    }
+
+    .email-frequency {
+      grid-area: email-freq;
+    }
+
+    .phone-number {
+      grid-area: phone;
+    }
+
+    .fine-print {
+      grid-area: fine-print;
+    }
+
+    .message-box {
+      grid-area: msg;
+    }
+
   }
 }
+
+  // display: grid;
+  // grid-template-columns: repeat(3, 25%);
+  // grid-template-areas:
+  // "header header header"
+  // "sidebar main main"
+  // "sidebar main main"
+  // "sidebar footer footer";
+
+  // div {
+  //   border: 1px solid grey;
+  //   background: #fff;
+  //   padding: 1rem 0;
+  // }
+
+
+// @media(min-width: 800px){
+//   .client-sign-up{
+//     // background: blue;
+//     // display: flex;
+//     display: grid;
+//     flex-wrap: wrap;
+
+//     // div:nth-child(1){
+//     //   background: gold;
+//     //   grid-area: footer;
+//     // }
+    
+//     // div:nth-child(2){
+//     //   background: tomato;
+//     //   grid-area: sidebar;
+//     // }
+ 
+//     // div:nth-child(3){
+//     //   background: magenta;
+//     //   grid-area: header
+//     // }
+//     // div:nth-child(4){
+//     //   background: aqua;
+//     //   grid-area: main;
+//     // }
+
+
+//     // div {
+//     //   width: 45%;
+//     // }
+//   }
+// }
