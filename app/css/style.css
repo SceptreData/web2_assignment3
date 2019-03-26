@@ -198,6 +198,9 @@ h6 {
 /* 12.5px */
 /* 10.42px */
 /* Screen Variables */
+.hidden {
+  display: none; }
+
 .site-nav {
   padding: 0.5rem 1rem; }
 
@@ -246,6 +249,9 @@ h6 {
 aside {
   max-width: 960px;
   margin: 0 auto; }
+  aside h3 {
+    padding: .5rem 1rem;
+    text-transform: uppercase; }
 
 .client-sign-up {
   padding: 1rem;
@@ -278,7 +284,7 @@ aside {
 @media (min-width: 720px) {
   .client-sign-up {
     grid-column-gap: 1.5rem;
-    grid-template-areas: "first last" "email email" "password confirm-pw" "email-freq phone" "fine-print fine-print" "msg msg"; }
+    grid-template-areas: "first last" "email email" "password confirm-pw" "email-freq phone" "fine-print fine-print" "msg msg" "check check"; }
     .client-sign-up .first-name {
       grid-area: first; }
     .client-sign-up .last-name {
@@ -289,6 +295,9 @@ aside {
       grid-area: password; }
     .client-sign-up .password-confirm {
       grid-area: confirm-pw; }
+      .client-sign-up .password-confirm select {
+        appearance: none;
+        -webkit-appearance: none; }
     .client-sign-up .email-frequency {
       grid-area: email-freq; }
     .client-sign-up .phone-number {
@@ -296,7 +305,15 @@ aside {
     .client-sign-up .fine-print {
       grid-area: fine-print; }
     .client-sign-up .message-box {
-      grid-area: msg; } }
+      grid-area: msg; }
+    .client-sign-up .check-layout {
+      grid-area: check;
+      display: flex;
+      flex-wrap: wrap; }
+      .client-sign-up .check-layout img {
+        width: 10px; }
+      .client-sign-up .check-layout .checkbox {
+        flex-basis: 33%; } }
 
 .award-tile {
   text-transform: uppercase;
