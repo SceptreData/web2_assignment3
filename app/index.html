@@ -4,10 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta
-      name="description"
-      content="Avenue Fashion, one stop shop for all your fashion needs!"
-    />
+    <meta name="description" content="Avenue Fashion, one stop shop for all your fashion needs!" />
 
     <title>Avenue Fashion</title>
 
@@ -91,36 +88,19 @@
           </div>
 
           <div class="fine-print">
-            <style>
-              .radio {
-                width: 2rem;
-                height: 2rem;
-                border-radius: 50%;
-                border: 1px solid grey;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-              }
-
-              .dot-view {
-                width: 45%;
-                height: 45%;
-                border-radius: 50%;
-                background: grey;
-              }
-            </style>
             <div class="radio-button">
               <div class="radio">
-                <div class="dot"></div>
-                <!-- <div class="label">
-                  I agree to the terms and conditions of the website. I may opt
-                  out at any time.
-                </div> -->
+                <div class="dot">
+                  <div class="dot-item"></div>
+                </div>
+                <div class="label">
+                  I agree to the terms and conditions of the website. I may opt out at any time.
+                </div>
               </div>
             </div>
             <script>
               const radioButton = document.querySelector(".radio");
-              const dotElt = document.querySelector(".dot");
+              const dotElt = document.querySelector(".dot-item");
               radioButton.addEventListener("click", () => {
                 // dotElt.classList.toggle('hidden');
                 dotElt.classList.toggle("dot-view");
@@ -130,112 +110,116 @@
 
           <div class="message-box">
             <label for="">Send us a message <span>(optional)</span></label>
-            <textarea
-              name="message"
-              id="message"
-              cols="30"
-              rows="10"
-            ></textarea>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
           </div>
 
-          <div class="sign-up-categories"></div>
-
-          <div class="preferences"></div>
-
-          <style>
-            .checkbox {
-              /* display: inline-block; */
-              /* position: relative; */
-              width: 2.5rem;
-              height: 2.5rem;
-              /* position: relative; */
-            }
-
-            .box {
-
-              border: 1px solid grey;
-            }
-
-            .check-label {
-              /* display: inline-block; */
-            }
-          </style>
-          <div class="check-layout">
-            <div class="checkbox">
-              <div class="box">
-                <div class="checked ">
-                  <img src="img/check.svg" alt="" />
+          <div class="sign-up-categories">
+            <h4>Sign up for</h4>
+            <div class="check-layout">
+              <div class="check-item">
+                <div class="checkbox">
+                  <img class="checked" src="img/check.svg" alt="" />
                 </div>
+                <div class="check-label">exclusive updates</div>
               </div>
-              <div class="check-label">Exclusive Updates</div>
-            </div>
 
-            <div class="checkbox">
-              <div class="box">
-                <div class="checked ">
-                  <img src="img/check.svg" alt="" />
+              <div class="check-item">
+                <div class="checkbox">
+                  <img class="checked" src="img/check.svg" alt="" />
                 </div>
+                <div class="check-label">discounts/sales</div>
               </div>
-              <div class="check-label">Exclusive Updates</div>
-            </div>
-
-            <div class="checkbox">
-              <div class="box">
-                <div class="checked ">
-                  <img src="img/check.svg" alt="" />
+              <div class="check-item">
+                <div class="checkbox">
+                  <img class="checked" src="img/check.svg" alt="" />
                 </div>
+                <div class="check-label">new arrivals</div>
               </div>
-              <div class="check-label">Exclusive Updates</div>
-            </div>
-
-            <div class="checkbox">
-              <div class="box">
-                <div class="checked ">
-                  <img src="img/check.svg" alt="" />
+              <div class="check-item">
+                <div class="checkbox">
+                  <img class="checked" src="img/check.svg" alt="" />
                 </div>
+                <div class="check-label">contests</div>
               </div>
-              <div class="check-label">Exclusive Updates</div>
-            </div>
-
-            <div class="checkbox">
-              <div class="box">
-                <div class="checked ">
-                  <img src="img/check.svg" alt="" />
+              <div class="check-item">
+                <div class="checkbox">
+                  <img class="checked" src="img/check.svg" alt="" />
                 </div>
+                <div class="check-label">everything</div>
               </div>
-              <div class="check-label">Exclusive Updates</div>
-            </div>
-
-            <div class="checkbox">
-              <div class="box">
-                <div class="checked ">
-                  <img src="img/check.svg" alt="" />
+              <div class="check-item">
+                <div class="checkbox">
+                  <img class="checked" src="img/check.svg" alt="" />
                 </div>
+                <div class="check-label">coupons</div>
               </div>
-              <div class="check-label">Exclusive Updates</div>
             </div>
           </div>
 
           <script>
-            const checkBox = document.querySelector(".box");
+            const checkBox = document.querySelector(".checkbox");
             const check = document.querySelector(".checked");
-            const isChecked = false;
+            let isChecked = false;
 
             checkBox.addEventListener("click", () => {
               console.log("item clicked");
               if (isChecked) {
-                check.style.opacity = "1";
+                check.style.opacity = 0;
                 isChecked = !isChecked;
               } else {
-                check.style.opacity = 0;
-                isCheck = !isChecked;
+                check.style.opacity = "1.0";
+                isChecked = !isChecked;
               }
             });
           </script>
-          <button type="submit" form="client-sign-up" value="Submit">
-            Create Account
-          </button>
+
+          <div class="preferences">
+            <h4>Preferences (optional)</h4>
+            <div class="preference-layout">
+              <div class="preference-item">
+                <label for="language-dropdown">Language</label>
+                <select name="language-dropdown" id="">
+                  <option value="english">english</option>
+                  <option value="german">german</option>
+                  <option value="swahili">swahili</option>
+                </select>
+              </div>
+
+              <div class="preference-item">
+                <label for="clothing-size-dropdown">Do you prefer a size of clothing?</label>
+                <select name="clothing-size-dropdown" id="clothing-size-dropdown">
+                  <option value="small">small</option>
+                  <option value="medium">medium</option>
+                  <option value="extreme">EXTREME</option>
+                </select>
+              </div>
+
+              <div class="preference-item">
+                <label for="location-dropdown">Your store location</label>
+                <select name="location-dropdown" id="location-dropdown">
+                  <option value="edmonton">Edmonton</option>
+                  <option value="calgary">Calgary</option>
+                  <option value="uzbekistan">Uzbekistan</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="create-account">
+            <button type="submit" form="client-sign-up" value="Submit">
+              Create Account
+            </button>
+            <p>By clicking 'Create Account', you agree to our <span>Privacy Policy →</span></p>
+          </div>
         </form>
+        <section class="need-help">
+          <h4>Need Help?</h4>
+          <p>
+            If you have questions about your account, please contact
+            <span>customer service</span> 24 hours a day, 7 days a week.
+            <span class="help-number">1-888-555-5555</span>
+          </p>
+        </section>
       </aside>
     </main>
 
