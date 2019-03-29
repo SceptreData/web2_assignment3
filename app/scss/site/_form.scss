@@ -1,7 +1,12 @@
 aside {
   max-width: 960px;
   margin: 0 auto;
+  h3 {
+    padding:  .5rem 1rem;
+    text-transform: uppercase;
+  }
 }
+
 .client-sign-up{
   padding: 1rem;
   // min-width: 610px;
@@ -50,7 +55,8 @@ aside {
     "password confirm-pw"
     "email-freq phone"
     "fine-print fine-print"
-    "msg msg";
+    "msg msg"
+    "check check";
     
    .first-name {
       grid-area: first;
@@ -70,6 +76,10 @@ aside {
 
     .password-confirm {
       grid-area: confirm-pw;
+      select {
+        appearance: none;
+        -webkit-appearance: none;
+      }
     }
 
     .email-frequency {
@@ -82,10 +92,26 @@ aside {
 
     .fine-print {
       grid-area: fine-print;
+      
+   
     }
 
     .message-box {
       grid-area: msg;
+    }
+
+    .check-layout {
+      grid-area: check;
+      display: flex;
+      flex-wrap: wrap;
+
+      img {
+        width: 10px;
+      }
+
+      .checkbox {
+        flex-basis: 33%;
+      }
     }
 
   }
