@@ -278,7 +278,7 @@ aside {
 @media (min-width: 720px) {
   .client-sign-up {
     grid-column-gap: 1.5rem;
-    grid-template-areas: "first last" "email email" "password confirm-pw" "email-freq phone" "fine-print fine-print" "msg msg"; }
+    grid-template-areas: "first last" "email email" "password confirm-pw" "email-freq phone" "fine-print fine-print" "msg msg"; }
     .client-sign-up .first-name {
       grid-area: first; }
     .client-sign-up .last-name {
