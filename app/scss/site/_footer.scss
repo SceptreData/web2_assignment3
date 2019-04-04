@@ -8,7 +8,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   padding: 2.8rem 1.5rem;
-  @media screen and (min-width: 640px) {
+  @media screen and (min-width: 820px) {
     padding-top: 40px;
     max-width: 860px;
   }
@@ -21,7 +21,7 @@ footer {
   section {
     margin-bottom: 4.375rem;
     flex-basis: 50%;
-    @media screen and (min-width: 640px) {
+    @media screen and (min-width: 820px) {
       padding: 0;
       flex-basis: 25%;
     }
@@ -32,7 +32,7 @@ footer {
     font-weight: 300;
     margin-bottom: 4px;
     font-size: 15px;
-    @media screen and (min-width: 640px) {
+    @media screen and (min-width: 820px) {
       font-size: 14px;
     }
   }
@@ -41,7 +41,7 @@ footer {
 .footer-tile-layout {
   @include push--auto;
   max-width: 860px;
-  @media screen and (min-width: 640px) {
+  @media screen and (min-width: 820px) {
     display: flex;
     justify-content: space-between;
   }
