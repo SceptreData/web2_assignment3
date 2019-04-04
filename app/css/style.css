@@ -202,7 +202,7 @@ h6 {
   display: none; }
 
 .site-nav {
-  padding: 0.5rem 1rem; }
+  padding: 1rem 5rem; }
 
 .nav-items {
   display: flex;
@@ -235,7 +235,11 @@ h6 {
   text-align: center;
   color: #fff;
   text-transform: uppercase;
-  background: linear-gradient(rgba(58, 58, 58, 0.849), rgba(87, 87, 87, 0.493)), url(../img/page-header.jpg) center/cover; }
+  background: linear-gradient(rgba(58, 58, 58, 0.849), rgba(87, 87, 87, 0.493)), url(../img/page-header.jpg) center/cover;
+  margin-bottom: 2rem; }
+  @media screen and (min-width: 640px) {
+    .page-header {
+      margin-bottom: 7rem; } }
 
 .header-title {
   font-size: calc(2rem + 2vw);
@@ -249,11 +253,18 @@ h6 {
 aside {
   max-width: 960px;
   margin: 0 auto; }
+  @media screen and (min-width: 640px) {
+    aside {
+      max-width: 630px; } }
   aside h3 {
+    color: #575153;
     padding: 0.5rem 1rem;
     text-transform: uppercase; }
+  aside h4 {
+    color: #575153; }
   aside .need-help {
-    padding: 1rem; }
+    padding: 1rem;
+    margin-bottom: 60px; }
     aside .need-help h4 {
       color: #00c8c8;
       text-transform: uppercase; }
@@ -364,6 +375,13 @@ aside {
   .client-sign-up .create-account span {
     color: #00c8c8;
     font-weight: 700; }
+  .client-sign-up .create-account a,
+  .client-sign-up .create-account a:visited {
+    color: #00c8c8;
+    text-decoration: none; }
+    .client-sign-up .create-account a:hover,
+    .client-sign-up .create-account a:visited:hover {
+      color: #009595; }
 
 @media (min-width: 720px) {
   .client-sign-up {
@@ -398,10 +416,59 @@ aside {
     .client-sign-up .create-account {
       grid-area: create;
       display: flex;
-      justify-content: space-between;
-      align-items: center; } }
+      justify-content: space-between; }
+      .client-sign-up .create-account p {
+        font-size: 15px; } }
+    @media screen and (min-width: 720px) and (min-width: 640px) {
+      .client-sign-up .create-account p {
+        max-width: 220px; } }
+
+footer {
+  background: #f8f8f8;
+  width: 100%; }
+
+.footer-nav-layout {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2.8rem 1.5rem; }
+  @media screen and (min-width: 640px) {
+    .footer-nav-layout {
+      padding-top: 40px;
+      max-width: 860px; } }
+  .footer-nav-layout h5 {
+    color: #575153;
+    text-transform: uppercase;
+    margin-bottom: 1.3rem; }
+  .footer-nav-layout section {
+    margin-bottom: 4.375rem;
+    flex-basis: 50%; }
+    @media screen and (min-width: 640px) {
+      .footer-nav-layout section {
+        padding: 0;
+        flex-basis: 25%; } }
+  .footer-nav-layout li {
+    font-family: "Montserrat";
+    font-weight: 300;
+    margin-bottom: 4px;
+    font-size: 15px; }
+    @media screen and (min-width: 640px) {
+      .footer-nav-layout li {
+        font-size: 14px; } }
+
+.footer-tile-layout {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 860px; }
+  @media screen and (min-width: 640px) {
+    .footer-tile-layout {
+      display: flex;
+      justify-content: space-between; } }
 
 .award-tile {
+  margin-left: auto;
+  margin-right: auto;
   text-transform: uppercase;
   width: 400px;
   height: 140px;
@@ -414,9 +481,12 @@ aside {
   margin-bottom: 20px; }
 
 .social-tile {
+  margin-left: auto;
+  margin-right: auto;
   width: 400px;
   height: 140px;
-  background: #00c8c8; }
+  background: #00c8c8;
+  margin-bottom: 1.5rem; }
   .social-tile svg {
     color: #fff;
     width: 15px; }

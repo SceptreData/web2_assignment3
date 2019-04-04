@@ -1,5 +1,54 @@
+footer {
+  background: #f8f8f8;
+  width: 100%;
+}
+
+.footer-nav-layout {
+  @include push--auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2.8rem 1.5rem;
+  @media screen and (min-width: 640px) {
+    padding-top: 40px;
+    max-width: 860px;
+  }
+  h5 {
+    color: #575153;
+    text-transform: uppercase;
+    margin-bottom: 1.3rem;
+  }
+
+  section {
+    margin-bottom: 4.375rem;
+    flex-basis: 50%;
+    @media screen and (min-width: 640px) {
+      padding: 0;
+      flex-basis: 25%;
+    }
+  }
+
+  li {
+    font-family: "Montserrat";
+    font-weight: 300;
+    margin-bottom: 4px;
+    font-size: 15px;
+    @media screen and (min-width: 640px) {
+      font-size: 14px;
+    }
+  }
+}
+
+.footer-tile-layout {
+  @include push--auto;
+  max-width: 860px;
+  @media screen and (min-width: 640px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 
 .award-tile {
+  @include push--auto;
   text-transform: uppercase;
   width: 400px;
   height: 140px;
@@ -13,9 +62,11 @@
 }
 
 .social-tile {
+  @include push--auto;
   width: 400px;
   height: 140px;
   background: #00c8c8;
+  margin-bottom: 1.5rem;
   svg {
     color: #fff;
     width: 15px;
@@ -30,7 +81,7 @@
 
   li {
     margin-right: 40px;
-    &:last-of-type{
+    &:last-of-type {
       margin-right: 0;
     }
   }

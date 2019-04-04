@@ -1,12 +1,23 @@
+$color--form-title: #575153;
+
 aside {
   max-width: 960px;
   margin: 0 auto;
+  @media screen and (min-width: 640px) {
+    max-width: 630px;
+  }
   h3 {
+    color: $color--form-title;
     padding: 0.5rem 1rem;
     text-transform: uppercase;
   }
+
+  h4 {
+    color: $color--form-title;
+  }
   .need-help {
     padding: 1rem;
+    margin-bottom: 60px;
     h4 {
       color: #00c8c8;
       text-transform: uppercase;
@@ -168,6 +179,16 @@ aside {
       color: #00c8c8;
       font-weight: 700;
     }
+
+    a,
+    a:visited {
+      color: #00c8c8;
+      text-decoration: none;
+
+      &:hover {
+        color: darken(#00c8c8, 10%);
+      }
+    }
   }
 }
 
@@ -242,7 +263,15 @@ aside {
       grid-area: create;
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      // align-items: center;
+      p {
+        font-size: 15px;
+      }
+      @media screen and (min-width: 640px) {
+        p {
+          max-width: 220px;
+        }
+      }
     }
   }
 }

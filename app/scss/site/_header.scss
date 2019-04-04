@@ -3,7 +3,12 @@
   text-align: center;
   color: #fff;
   text-transform: uppercase;
-  background:  linear-gradient(rgba(58, 58, 58, 0.849), rgba(87, 87, 87, 0.493)),  url(../img/page-header.jpg)  center / cover ;
+  background: linear-gradient(rgba(58, 58, 58, 0.849), rgba(87, 87, 87, 0.493)),
+    url(../img/page-header.jpg) center / cover;
+  margin-bottom: 2rem;
+  @media screen and (min-width: 640px) {
+    margin-bottom: 7rem;
+  }
 }
 
 .header-title {

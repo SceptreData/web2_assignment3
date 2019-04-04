@@ -1,40 +1,40 @@
 .site-nav {
-    padding: 0.5rem 1rem;
+  padding: 1rem 5rem;
 }
 
 .nav-items {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .menu-icon {
-    width: 1.5rem;
+  width: 1.5rem;
 }
 
-.list-view{
-    display: none;
+.list-view {
+  display: none;
 }
 
 .avenue-fashion {
-    font-size: 1.25rem;
-    font-weight: bolder;
-    color: #333;
+  font-size: 1.25rem;
+  font-weight: bolder;
+  color: #333;
 
-    span {
-        font-weight: 700;
-        color: #777;
-    }
+  span {
+    font-weight: 700;
+    color: #777;
+  }
 }
 
-@media (min-width: 720px){
-    .menu-icon{
-        display: none;
-    }
+@media (min-width: 720px) {
+  .menu-icon {
+    display: none;
+  }
 
-    .list-view {
-        display: flex;
-        li {
-            margin: 0 1rem;
-        }
+  .list-view {
+    display: flex;
+    li {
+      margin: 0 1rem;
     }
+  }
 }
