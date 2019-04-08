@@ -1,10 +1,25 @@
 .site-nav {
   padding: 1rem 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .nav-items {
   display: flex;
   justify-content: space-between;
+
+  .nav-link,
+  .nav-link:visited {
+    font-family: $montserrat;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222222;
+    text-decoration: none;
+    &:hover {
+      color: #00c8c8;
+    }
+  }
 }
 
 .menu-icon {
@@ -26,15 +41,47 @@
   }
 }
 
-@media (min-width: 720px) {
+@media screen and(min-width: $screen-md) {
+  .site-nav {
+    min-height: 75px;
+  }
+  .avenue-fashion {
+    font-size: calc(0.5rem + 1vw);
+    min-width: 120px;
+  }
   .menu-icon {
     display: none;
   }
 
+  .nav-items {
+    justify-content: space-between;
+    align-items: center;
+  }
   .list-view {
     display: flex;
-    li {
-      margin: 0 1rem;
+    // justify-content: space-between;
+    .nav-link {
+      font-weight: 400;
+      margin: 0 0.75rem 0 0;
+      font-size: calc(0.5rem + 0.25vw);
+    }
+  }
+}
+
+@media screen and (min-width: $screen-lg) {
+  .avenue-fashion {
+    h1 {
+      font-size: 18px;
+    }
+  }
+  .nav-items {
+    .nav-link {
+      font-weight: 700;
+      margin-right: 35px;
+      font-size: 0.625rem;
+      .last {
+        margin-right: 0;
+      }
     }
   }
 }

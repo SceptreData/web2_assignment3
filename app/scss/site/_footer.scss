@@ -69,7 +69,12 @@ footer {
   margin-bottom: 1.5rem;
   svg {
     color: #fff;
-    width: 15px;
+    height: 20px;
+    transition: 0.1s ease-in;
+    &:hover {
+      transition: 0.1s ease-in;
+      color: gold;
+    }
   }
 }
 
