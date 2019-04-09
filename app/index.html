@@ -21,8 +21,15 @@
         <h1><span>Avenue</span> Fashion</h1>
       </li>
       <li>
-        <img class="menu-icon" src="img/menu.svg" alt="menu button" />
+        <img id="menu-icon" class="menu-icon" src="img/menu.svg" alt="menu button" />
         <ul class="list-view">
+          <li><a href="#" class="nav-link">men</a></li>
+          <li><a href="#" class="nav-link">womens</a></li>
+          <li><a href="#" class="nav-link">the brand</a></li>
+          <li><a href="#" class="nav-link">local stores</a></li>
+          <li><a href="#" class="nav-link last">look book</a></li>
+        </ul>
+        <ul id="mobile-menu" class="icon-view">
           <li><a href="#" class="nav-link">men</a></li>
           <li><a href="#" class="nav-link">womens</a></li>
           <li><a href="#" class="nav-link">the brand</a></li>
@@ -53,17 +60,17 @@
         </div>
 
         <div class="email">
-          <label for="emailAddress">e-mail address</label>
+          <label for="emailAddress">E-mail address</label>
           <input id="emailAddress" type="text" name="emailAddress" />
         </div>
 
         <div class="password">
-          <label for="password">password</label>
+          <label for="password">Password</label>
           <input id="password" type="text" name="password" />
         </div>
 
         <div class="password-confirm">
-          <label for="passwordConfirm">password confirm</label>
+          <label for="passwordConfirm">Password confirm</label>
           <input id="passwordConfirm" type="text" name="passwordConfirm" />
         </div>
 
@@ -118,38 +125,74 @@
           <div class="check-layout">
             <div class="check-item">
               <div class="checkbox">
-                <img class="checked" src="img/check.svg" alt="" />
+                <svg class="checked" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check"
+                  class="svg-inline--fa fa-check fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512">
+                  <path fill="currentColor"
+                    d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                  </path>
+                </svg>
               </div>
               <div class="check-label">exclusive updates</div>
             </div>
 
             <div class="check-item">
               <div class="checkbox">
-                <img class="checked" src="img/check.svg" alt="" />
+                <svg class="checked" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check"
+                  class="svg-inline--fa fa-check fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512">
+                  <path fill="currentColor"
+                    d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                  </path>
+                </svg>
               </div>
               <div class="check-label">discounts/sales</div>
             </div>
             <div class="check-item">
               <div class="checkbox">
-                <img class="checked" src="img/check.svg" alt="" />
+                <svg class="checked" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check"
+                  class="svg-inline--fa fa-check fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512">
+                  <path fill="currentColor"
+                    d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                  </path>
+                </svg>
               </div>
               <div class="check-label">new arrivals</div>
             </div>
             <div class="check-item">
               <div class="checkbox">
-                <img class="checked" src="img/check.svg" alt="" />
+                <svg class="checked" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check"
+                  class="svg-inline--fa fa-check fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512">
+                  <path fill="currentColor"
+                    d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                  </path>
+                </svg>
               </div>
               <div class="check-label">contests</div>
             </div>
             <div class="check-item">
               <div class="checkbox">
-                <img class="checked" src="img/check.svg" alt="" />
+                <svg class="checked" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check"
+                  class="svg-inline--fa fa-check fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512">
+                  <path fill="currentColor"
+                    d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                  </path>
+                </svg>
               </div>
               <div class="check-label">everything</div>
             </div>
             <div class="check-item">
               <div class="checkbox">
-                <img class="checked" src="img/check.svg" alt="" />
+                <svg class="checked" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check"
+                  class="svg-inline--fa fa-check fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512">
+                  <path fill="currentColor"
+                    d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+                  </path>
+                </svg>
               </div>
               <div class="check-label">coupons</div>
             </div>
@@ -315,6 +358,7 @@
     </div>
   </footer>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 

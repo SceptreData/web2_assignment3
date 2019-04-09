@@ -224,6 +224,19 @@ h6 {
 .menu-icon {
   width: 1.5rem; }
 
+.icon-view {
+  background: white;
+  position: absolute;
+  top: 60px;
+  padding: 0.5rem 5rem;
+  left: -100vw;
+  width: 100%;
+  border-bottom: 1px solid #000;
+  box-shadow: 0 0 5px 0 grey;
+  text-align: right; }
+  .icon-view li {
+    margin-bottom: 0.5rem; }
+
 .list-view {
   display: none; }
 
@@ -297,7 +310,8 @@ aside {
     color: #575153; }
   aside .need-help {
     padding: 1rem;
-    margin-bottom: 60px; }
+    margin-bottom: 60px;
+    color: #8e8c8c; }
     aside .need-help h4 {
       color: #00c8c8;
       text-transform: uppercase; }
@@ -318,7 +332,7 @@ aside {
     display: block; }
   .client-sign-up input,
   .client-sign-up select {
-    border: 1px solid grey;
+    border: 1px solid #e7e7e7;
     background-color: #fff;
     font-family: "Montserrat", sans-serif;
     font-size: 1.125rem;
@@ -392,6 +406,14 @@ aside {
     margin-bottom: 15px; }
     .client-sign-up .preference-item select {
       width: calc(100% - 15px); }
+  .client-sign-up .fine-print {
+    font-family: "Montserrat", sans-serif;
+    color: #8e8c8c;
+    font-size: 15px;
+    font-weight: 300; }
+    @media screen and (min-width: 640px) {
+      .client-sign-up .fine-print {
+        font-family: "Roboto", sans-serif; } }
   .client-sign-up .create-account button {
     font-family: "Montserrat";
     text-transform: uppercase;
@@ -403,6 +425,7 @@ aside {
     padding: 20px 30px;
     margin-bottom: 2rem; }
   .client-sign-up .create-account p {
+    color: #8e8c8c;
     font-size: 15px;
     max-width: 480px; }
   .client-sign-up .create-account span {
@@ -464,24 +487,36 @@ footer {
   margin-left: auto;
   margin-right: auto;
   display: flex;
-  flex-wrap: wrap;
-  padding: 2.8rem 1.5rem; }
-  @media screen and (min-width: 820px) {
+  flex-wrap: wrap; }
+  @media screen and (min-width: 640px) {
     .footer-nav-layout {
-      padding-top: 40px;
-      max-width: 860px; } }
+      max-width: 600px;
+      justify-content: space-between; } }
+  @media screen and (min-width: 992px) {
+    .footer-nav-layout {
+      max-width: 860px;
+      padding: 40px 2rem 0 2rem; } }
   .footer-nav-layout h5 {
+    font-family: "Montserrat";
+    font-weight: 700;
     color: #575153;
     text-transform: uppercase;
-    margin-bottom: 1.3rem; }
+    margin-bottom: 1.3rem;
+    font-size: 15px; }
+    @media screen and (min-width: 640px) {
+      .footer-nav-layout h5 {
+        font-weight: 400; } }
   .footer-nav-layout section {
     margin-bottom: 4.375rem;
-    flex-basis: 50%; }
-    @media screen and (min-width: 820px) {
+    flex-basis: 50%;
+    padding: 1.625rem; }
+    @media screen and (min-width: 992px) {
       .footer-nav-layout section {
         padding: 0;
         flex-basis: 25%; } }
   .footer-nav-layout li {
+    display: flex;
+    flex-direction: column;
     font-family: "Montserrat";
     font-weight: 300;
     margin-bottom: 4px;
