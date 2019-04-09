@@ -842,6 +842,13 @@ footer {
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 992px) {
+  .contact-details span {
+    display: none;
+    padding-top: 4rem;
+  }
+}
+
 .social-tile {
   margin-left: auto;
   margin-right: auto;

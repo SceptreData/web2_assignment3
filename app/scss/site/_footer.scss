@@ -80,6 +80,15 @@ footer {
   margin-bottom: 20px;
 }
 
+.contact-details {
+  span {
+    @media screen and (min-width: $screen-lg) {
+      display: none;
+      padding-top: 4rem;
+    }
+  }
+}
+
 .social-tile {
   @include push--auto;
   width: 400px;
