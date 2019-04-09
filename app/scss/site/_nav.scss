@@ -84,6 +84,10 @@
 }
 
 @media screen and (min-width: $screen-lg) {
+  .site-nav {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
   .avenue-fashion {
     h1 {
       font-size: 18px;
