@@ -110,3 +110,20 @@ footer {
     }
   }
 }
+
+.copyright-container {
+  background: #333333;
+  .copyright {
+    padding: 0.5rem 0;
+    font-family: $montserrat;
+    font-size: 10px;
+    color: #999999;
+    text-align: center;
+    @media screen and (min-width: $screen-md) {
+      text-align: left;
+      max-width: 860px;
+      margin: 0 auto;
+      padding-left: 20px;
+    }
+  }
+}

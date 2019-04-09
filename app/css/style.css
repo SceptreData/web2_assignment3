@@ -884,4 +884,25 @@ footer {
 .social-items li:last-of-type {
   margin-right: 0;
 }
+
+.copyright-container {
+  background: #333333;
+}
+
+.copyright-container .copyright {
+  padding: 0.5rem 0;
+  font-family: "Montserrat";
+  font-size: 10px;
+  color: #999999;
+  text-align: center;
+}
+
+@media screen and (min-width: 640px) {
+  .copyright-container .copyright {
+    text-align: left;
+    max-width: 860px;
+    margin: 0 auto;
+    padding-left: 20px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
