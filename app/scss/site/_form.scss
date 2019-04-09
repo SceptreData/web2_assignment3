@@ -18,6 +18,7 @@ aside {
   .need-help {
     padding: 1rem;
     margin-bottom: 60px;
+    color: #8e8c8c;
     h4 {
       color: #00c8c8;
       text-transform: uppercase;
@@ -49,7 +50,7 @@ aside {
 
   input,
   select {
-    border: 1px solid grey;
+    border: 1px solid #e7e7e7;
     background-color: #fff;
     font-family: "Montserrat", sans-serif;
     font-size: 1.125rem;
@@ -158,6 +159,16 @@ aside {
     // width: calc(50% - 15px);
   }
 
+  .fine-print {
+    font-family: $montserrat, sans-serif;
+    color: #8e8c8c;
+    font-size: 15px;
+    font-weight: 300;
+    @media screen and (min-width: $screen-md) {
+      font-family: $roboto, sans-serif;
+    }
+  }
+
   .create-account {
     button {
       font-family: "Montserrat";
@@ -171,6 +182,7 @@ aside {
       margin-bottom: 2rem;
     }
     p {
+      color: #8e8c8c;
       font-size: 15px;
       max-width: 480px;
     }
