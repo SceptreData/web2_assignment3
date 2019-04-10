@@ -47,6 +47,14 @@ footer {
     display: flex;
     flex-direction: column;
 
+    a {
+      color: currentColor;
+      text-decoration: none;
+      &:hover {
+        color: lighten(#333333, 45%);
+      }
+    }
+
     font-family: "Montserrat";
     font-weight: 300;
     margin-bottom: 4px;
