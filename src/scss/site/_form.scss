@@ -71,6 +71,12 @@ aside {
     min-width: 100%;
     max-height: 185px;
     min-height: 185px;
+    transition: 0.15s ease-in;
+    padding: 0.5rem;
+    &:hover {
+      transition: 0.15s ease-in;
+      background: darken(#fff, 5%);
+    }
   }
 
   .radio {
@@ -131,6 +137,12 @@ aside {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.1s ease-in;
+
+    &:hover {
+      transition: 0.1s ease-in;
+      background: darken(#fff, 5%);
+    }
     .checked {
       text-align: center;
       width: 20px;
@@ -180,6 +192,12 @@ aside {
       background: #fff;
       padding: 20px 30px;
       margin-bottom: 2rem;
+      transition: 0.2s ease-in;
+      &:hover {
+        transition: 0.2s ease-in;
+        background: darken(#fff, 20%);
+        cursor: pointer;
+      }
     }
     p {
       color: #8e8c8c;
