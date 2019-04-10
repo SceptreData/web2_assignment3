@@ -54,6 +54,14 @@
     font-weight: 700;
     color: #777;
   }
+
+  a {
+    color: currentColor;
+    text-decoration: none;
+    &:visited {
+      color: currentColor;
+    }
+  }
 }
 
 @media screen and(min-width: $screen-md) {

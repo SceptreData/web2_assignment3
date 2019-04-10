@@ -247,6 +247,11 @@ h6 {
   .avenue-fashion span {
     font-weight: 700;
     color: #777; }
+  .avenue-fashion a {
+    color: currentColor;
+    text-decoration: none; }
+    .avenue-fashion a:visited {
+      color: currentColor; }
 
 @media screen and (min-width: 640px) {
   .site-nav {
