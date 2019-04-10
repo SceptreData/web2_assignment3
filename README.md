@@ -1,1 +1,3 @@
-# web2_assignment3
+# Assignment 3 - Web 2
+Author: David Bergeron
+
